@@ -7,7 +7,7 @@ export default ({
         // means server
         /// this is used becayse get intail props might run on the server or the client (watch 236 video number);
         return axios.create({
-            baseURL: "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local",
+            baseURL: "http://www.kticketing-app-prod.site/",
             headers: req.headers
         })
     } else {
